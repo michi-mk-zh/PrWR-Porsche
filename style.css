@@ -3,3 +3,6 @@
     -webkit-box-shadow: 0px 0px 61px 5px rgba(0,0,0,0.75) inset;
     -moz-box-shadow: 0px 0px 61px 5px rgba(0,0,0,0.75) inset;;
 }
+.shadow-inner-large {
+    box-shadow: inset 0 40px 80px rgba(0, 0, 0, 0.9);
+}
