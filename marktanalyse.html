@@ -2,29 +2,111 @@
 <html lang="de-CH">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Auto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
 </head>
 <body>
-<header>
-    <nav>
+<header class="flex flex-col ">
+    <div class="flex justify-between py-4 pr-10 bg-black">
+        <img class="w-1/12 h-1/12" src="Porsche-Logo-3879986402.png" alt="Porsche">
+        <div class="mt-4 flex items-center space-x-4">
 
-    </nav>
+            <a href="index.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md ">Home</a>
+
+            <div class="relative inline-block text-left">
+                <div>
+                    <button type="button" class=" hover:bg-red-500 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-black  px-3 py-2 text-sm font-semibold text-white border" id="menu-button-1" aria-expanded="false" aria-haspopup="true">
+                        Geschichte
+                        <svg class="-mr-1 size-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none hidden" id="menu-1" role="menu" aria-orientation="vertical" tabindex="-1">
+                    <div class="py-1">
+                        <a href="geschichte_porsche.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-1-1">Ferdinand Porsche</a>
+                        <a href="geschichte_porsche_auto.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-1-2">Porsche</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marktanalyse Button -->
+            <a href="marktanalyse.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Marktanalyse</a>
+
+            <!-- Team Button -->
+            <a href="team.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Team</a>
+        </div>
+    </div>
+
 </header>
 <main>
 
-    <article>
-
-        <section>
-
-        </section>
-
-        <section>
-
-        </section>
-    </article>
-    <footer>
-
-    </footer>
 </main>
+<footer class="bg-black">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div  class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="team.html" class="flex items-center">
+
+
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+                <div>
+                    <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">Rechtliches</h2>
+                    <ul class="text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href='../pdf/disclaimer.pdf' download='../pdf/disclaimer.pdf' class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Disclaimer</a>
+                        </li>
+                        <li class='mb-4'>
+                            <a href='../pdf/haftungsauschluss.pdf' download='../pdf/haftungsauschluss.pdf' class='hover:text-white duration-300 ease-in-out'>Datenschutzerklärung</a>
+                        </li>
+                        <li class=''>
+                            <a href='../pdf/Quellen.pdf' download='../pdf/Quellen.pdf' class='hover:text-white duration-300 ease-in-out'>Quellen</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold  uppercase  text-white">Resources</h2>
+                    <ul class=" text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind CSS</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://stackoverflow.com/" class=" hover:text-white duration-300 ease-in-out">Stackoverflow</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://chatgpt.com/" class=" hover:text-white duration-300 ease-in-out">ChatGPT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">The Team</h2>
+                    <ul class="text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a class='hover:text-white duration-300 ease-in-out'>Michael Stefanoski - Developer</a>
+                        </li>
+
+                        <li class='mb-4'>
+                            <a class='hover:text-white duration-300 ease-in-out'> Victor Pesci - Research</a>
+                        </li>
+                        <li class=''>
+                            <a class='hover:text-white duration-300 ease-in-out'>Kristian Cerni - Documentator &amp; Hoster</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="team.html" class="">Team Four</a>. All Rights Reserved.
+          </span>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -2,29 +2,62 @@
 <html lang="de-CH">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <nav>
+<header class="flex flex-col ">
+    <div class="flex justify-between py-4 pr-10 bg-black">
+        <img class="w-1/12 h-1/12" src="Porsche-Logo-3879986402.png" alt="Porsche">
+        <div class="mt-4 flex items-center space-x-4">
 
-    </nav>
+            <a href="index.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md focus:bg-red-500">Home</a>
+
+            <div class="relative inline-block text-left">
+                <div>
+                    <button type="button" class=" hover:bg-red-500 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-black  px-3 py-2 text-sm font-semibold text-white border" id="menu-button-1" aria-expanded="false" aria-haspopup="true">
+                        Geschichte
+                        <svg class="-mr-1 size-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none hidden" id="menu-1" role="menu" aria-orientation="vertical" tabindex="-1">
+                    <div class="py-1">
+                        <a href="geschichte_porsche.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-1-1">Ferdinand Porsche</a>
+                        <a href="geschichte_porsche_auto.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-1-2">Porsche</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marktanalyse Button -->
+            <a href="marktanalyse.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Marktanalyse</a>
+
+            <!-- Team Button -->
+            <a href="team.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Team</a>
+        </div>
+    </div>
+
 </header>
-<main>
-
-    <article>
-
-        <section>
-
+<main class="bg-cyan-950 min-h-screen">
+    <div class="flex flex-col items-center ">
+        <h1 class="text-white font-bold text-8xl mt-4">Team Four</h1>
+        <section class="flex flex-row space-x-28 mt-4 text-white">
+            <div class="bg-red-500 w-96 custom-height">
+                <h1></h1>
+            </div>
+            <div class="bg-red-500 w-96 custom-height">
+                kristian
+            </div>
+            <div class="bg-red-500 w-96 custom-height">
+                victor
+            </div>
         </section>
 
-        <section>
-
-        </section>
-    </article>
-    <footer>
-
-    </footer>
+    </div>
 </main>
+
 </body>
 </html>
