@@ -2,21 +2,25 @@
 <html lang="de-CH">
 <head>
     <meta charset="UTF-8">
-    <title>Auto</title>
+    <title>Marktanalyse</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script language="javascript" type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="flex flex-col ">
     <div class="flex justify-between py-4 pr-10 bg-black">
-        <img class="w-1/12 h-1/12" src="Porsche-Logo-3879986402.png" alt="Porsche">
+        <a href="index.html" target="_blank" rel="noopener noreferrer">
+            <img class="responsive-logo" src="Porsche-Logo-3879986402.png" alt="Porsche Logo">
+        </a>
+
         <div class="mt-4 flex items-center space-x-4">
 
-            <a href="index.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md ">Home</a>
+            <a href="index.html" class="text-white text-sm font-semibold border-b-2  px-3 py-2  ">Home</a>
 
             <div class="relative inline-block text-left">
                 <div>
-                    <button type="button" class=" hover:bg-red-500 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-black  px-3 py-2 text-sm font-semibold text-white border" id="menu-button-1" aria-expanded="false" aria-haspopup="true">
+                    <button type="button" class=" inline-flex w-full justify-center gap-x-1.5  bg-black  px-3 py-2 text-sm font-semibold text-white border-b-2" id="menu-button-1" aria-expanded="false" aria-haspopup="true">
                         Geschichte
                         <svg class="-mr-1 size-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -32,20 +36,83 @@
             </div>
 
             <!-- Marktanalyse Button -->
-            <a href="marktanalyse.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Marktanalyse</a>
+            <a href="marktanalyse.html" class="text-white text-sm font-semibold border-b-2 px-3 py-2 ">Marktanalyse</a>
 
             <!-- Team Button -->
-            <a href="team.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Team</a>
+            <a href="team.html" class="text-white text-sm font-semibold border-b-2 px-3 py-2 ">Team</a>
         </div>
     </div>
 
 </header>
-<main>
+<main class="bg-cyan-950 min-h-screen pt-16 pb-16 text-white">
+
+    <div id="div" class="bg-black p-8 rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row gap-6 ">
+        <!-- Text Section -->
+        <div class="flex-1">
+            <h2 class="text-2xl font-bold mb-4">Einnahmen</h2>
+            <p class="text-gray-300 mb-4 mt-10">
+                Porsche erzielte in den ersten neun Monaten des Jahres 2024 einen Umsatz von 28,56 Milliarden Euro, was
+                einem Rückgang von 5,2 % im Vergleich zum Vorjahr entspricht. Der operative Gewinn lag bei 4,04
+                Milliarden Euro, mit einer Umsatzrendite von 14,1 %. Obwohl diese Rendite weiterhin stark ist, stellt
+                sie einen Rückgang von 4,2 Prozentpunkten im Vergleich zur Umsatzrendite des Vorjahres dar, die bei 18,3
+                % lag.</p>
+
+        </div>
+
+        <!-- Image Section -->
+        <div class="flex-1 flex justify-center items-center">
+            <img src="A%20screenshot%20of%20a%20graph__Description%20automatically%20generated.png" alt="Placeholder Image"
+                 class="rounded-lg shadow-lg w-full max-w-sm">
+        </div>
+    </div>
+
+    <div class="bg-black p-8 rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row gap-6 mt-10 ">
+        <!-- Text Section -->
+        <div class="flex-1 text-white">
+            <h2 class="text-2xl  font-bold mb-4">Ziele</h2>
+            <p class="text-gray-300 mb-4">
+                Porsche hat eine neue Produktionsstrategie eingeführt, die sich auf die Entwicklung vollelektrischer
+                Modelle konzentriert. Dazu gehören der neue vollelektrische Macan sowie aktualisierte Versionen
+                bestehender Modelle wie Panamera, Taycan und das ikonische 911-Modell. Der Anteil der
+                batterieelektrischen Fahrzeuge (BEVs) an den Gesamtverkäufen liegt derzeit bei 13 %. Dieses Ziel hatte
+                sich das Unternehmen vorgenommen, um es bis Ende des Jahres zu erreichen.
+            <p class="text-gray-300">
+                Zusätzlich zu seiner Elektromobilitätsstrategie hat Porsche das ehrgeizige Ziel, bis 2030 klimaneutral
+                zu werden. Im Rahmen dieser Vision plant das Unternehmen, Batterien aus möglichst nachhaltigen und
+                erneuerbaren Materialien herzustellen, um seinen ökologischen Fußabdruck weiter zu reduzieren. </p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="flex-1 flex justify-center items-center">
+            <img src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspMBvMZq6G5OtgSv31nBJaA4qh4NSEGewirQ91gRmWBi2Ow7gVdcoVtUlhDfHIDspAnPpBniZJyNZ%25FctBvotqHf8dXF2W7PED6uQiIN9nReXjvo4y7z7PjF%25vUqU69uWXsOsgJeV6iTiK7zhRc2VBsqA7fQn4PED6u5M3N9nReCWMo4y7zInhF%25vUqYImuWXsO5FUeV6iTC6BzhRc2fFYqA7fQd9aOJtWFnQbNWMbd1czrGFl2Pz3BZhUynAYO" alt="Placeholder Image"
+                 class="rounded-lg shadow-lg w-full max-w-sm">
+        </div>
+    </div>
+
+    <div class="bg-black p-8 rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row gap-6 mt-10">
+        <!-- Text Section -->
+        <div class="flex-1">
+            <h2 class="text-2xl font-bold mb-4">Schwierigkeiten</h2>
+            <p class="text-gray-300 mb-4">
+                Porsche hat in diesem Jahr mehrere Herausforderungen erlebt, die zu einem Rückgang der Gewinne geführt
+                haben. Das Unternehmen hat seine Produktionsstrategie geändert und verfolgt nun den Ansatz, weniger
+                Fahrzeuge zu produzieren, dafür aber mit höherer Qualität und Exklusivität. Diese Umstellung hat jedoch
+                zu einem Anstieg der Produktionskosten geführt. Ausserdem kämpft Porsche derzeit auf dem chinesischen
+                Markt mit Schwierigkeiten, da das Unternehmen vergleichsweise spät in den Markt für batterieelektrische
+                Fahrzeuge (BEVs) eingestiegen ist und sich somit einem intensiven Wettbewerb und veränderten
+                Kundenbedürfnissen gegenübersieht.
+            </p>
+
+        </div>
+
+
+    </div>
+
 
 </main>
 <footer class="bg-black">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div  class="md:flex md:justify-between">
+        <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="team.html" class="flex items-center">
 
@@ -57,13 +124,17 @@
                     <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">Rechtliches</h2>
                     <ul class="text-gray-400 font-medium">
                         <li class="mb-4">
-                            <a href='../pdf/disclaimer.pdf' download='../pdf/disclaimer.pdf' class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Disclaimer</a>
+                            <a href='../pdf/disclaimer.pdf' download='../pdf/disclaimer.pdf'
+                               class='hover:text-white duration-300 ease-in-out'
+                               href='https://bonomettil.ch'>Disclaimer</a>
                         </li>
                         <li class='mb-4'>
-                            <a href='../pdf/haftungsauschluss.pdf' download='../pdf/haftungsauschluss.pdf' class='hover:text-white duration-300 ease-in-out'>Datenschutzerklärung</a>
+                            <a href='../pdf/haftungsauschluss.pdf' download='../pdf/haftungsauschluss.pdf'
+                               class='hover:text-white duration-300 ease-in-out'>Datenschutzerklärung</a>
                         </li>
                         <li class=''>
-                            <a href='../pdf/Quellen.pdf' download='../pdf/Quellen.pdf' class='hover:text-white duration-300 ease-in-out'>Quellen</a>
+                            <a href='../pdf/Quellen.pdf' download='../pdf/Quellen.pdf'
+                               class='hover:text-white duration-300 ease-in-out'>Quellen</a>
                         </li>
                     </ul>
 
@@ -72,36 +143,39 @@
                     <h2 class="mb-6 text-sm font-semibold  uppercase  text-white">Resources</h2>
                     <ul class=" text-gray-400 font-medium">
                         <li class="mb-4">
-                            <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind CSS</a>
+                            <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind
+                                CSS</a>
                         </li>
                         <li class="mb-4">
                             <a href="https://stackoverflow.com/" class=" hover:text-white duration-300 ease-in-out">Stackoverflow</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://chatgpt.com/" class=" hover:text-white duration-300 ease-in-out">ChatGPT</a>
+                            <a href="https://chatgpt.com/"
+                               class=" hover:text-white duration-300 ease-in-out">ChatGPT</a>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">The Team</h2>
-                    <ul class="text-gray-400 font-medium">
+                    <a href="team.html" class=" mb-6 md text-sm font-semibold uppercase text-white ">The Team</a>
+                    <ul class="text-gray-400 font-medium mt-4">
                         <li class="mb-4">
-                            <a class='hover:text-white duration-300 ease-in-out'>Michael Stefanoski - Developer</a>
+                            <a class=''>Michael Stefanoski - Developer</a>
                         </li>
 
                         <li class='mb-4'>
-                            <a class='hover:text-white duration-300 ease-in-out'> Victor Pesci - Research</a>
+                            <a class=''> Victor Pesci - Research</a>
                         </li>
                         <li class=''>
-                            <a class='hover:text-white duration-300 ease-in-out'>Kristian Cerni - Documentator &amp; Hoster</a>
+                            <a class=''>Kristian Cerni - Documentator &amp;
+                                Hoster</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </div>
-        <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8" />
+        <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8"/>
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="team.html" class="">Team Four</a>. All Rights Reserved.
           </span>

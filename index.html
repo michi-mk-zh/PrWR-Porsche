@@ -2,7 +2,7 @@
 <html lang="de-CH">
 <head>
     <meta charset="UTF-8">
-    <title>Porsche</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/output.css">
     <script language="javascript" type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -12,14 +12,17 @@
 
 <header class="flex flex-col h-screen">
     <div class="flex justify-between py-4 pr-10 bg-black">
-        <img class="w-1/12 h-1/12" src="Porsche-Logo-3879986402.png" alt="Porsche">
+        <a href="index.html" target="_blank" rel="noopener noreferrer">
+            <img class="responsive-logo" src="Porsche-Logo-3879986402.png" alt="Porsche Logo">
+        </a>
+
         <div class="mt-4 flex items-center space-x-4">
 
-            <a href="index.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Home</a>
+            <a href="index.html" class="text-white text-sm font-semibold border-b-2 px-3 py-2 ">Home</a>
 
             <div class="relative inline-block text-left">
                 <div>
-                    <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-black  px-3 py-2 text-sm font-semibold text-white border" id="menu-button-1" aria-expanded="false" aria-haspopup="true">
+                    <button type="button" class="inline-flex w-full justify-center gap-x-1.5 border-b-2 bg-black  px-3 py-2 text-sm font-semibold text-white " id="menu-button-1" aria-expanded="false" aria-haspopup="true">
                         Geschichte
                         <svg class="-mr-1 size-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -35,10 +38,10 @@
             </div>
 
             <!-- Marktanalyse Button -->
-            <a href="marktanalyse.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Marktanalyse</a>
+            <a href="marktanalyse.html" class="text-white text-sm font-semibold border-b-2 px-3 py-2 ">Marktanalyse</a>
 
             <!-- Team Button -->
-            <a href="team.html" class="text-white text-sm font-semibold border px-3 py-2 rounded-md">Team</a>
+            <a href="team.html" class="text-white text-sm font-semibold border-b-2 px-3 py-2">Team</a>
         </div>
     </div>
 
@@ -47,7 +50,6 @@
     </div>
 
 
-    <p class="text-white absolute top-44 left-40 w-64 h-48">placeholder</p>
 
 
 
@@ -60,7 +62,7 @@
 
 <footer class="bg-black">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div  class="md:flex md:justify-between">
+        <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="team.html" class="flex items-center">
 
@@ -72,13 +74,17 @@
                     <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">Rechtliches</h2>
                     <ul class="text-gray-400 font-medium">
                         <li class="mb-4">
-                            <a href='../pdf/disclaimer.pdf' download='../pdf/disclaimer.pdf' class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Disclaimer</a>
+                            <a href='../pdf/disclaimer.pdf' download='../pdf/disclaimer.pdf'
+                               class='hover:text-white duration-300 ease-in-out'
+                               href='https://bonomettil.ch'>Disclaimer</a>
                         </li>
                         <li class='mb-4'>
-                            <a href='../pdf/haftungsauschluss.pdf' download='../pdf/haftungsauschluss.pdf' class='hover:text-white duration-300 ease-in-out'>Datenschutzerklärung</a>
+                            <a href='../pdf/haftungsauschluss.pdf' download='../pdf/haftungsauschluss.pdf'
+                               class='hover:text-white duration-300 ease-in-out'>Datenschutzerklärung</a>
                         </li>
                         <li class=''>
-                            <a href='../pdf/Quellen.pdf' download='../pdf/Quellen.pdf' class='hover:text-white duration-300 ease-in-out'>Quellen</a>
+                            <a href='../pdf/Quellen.pdf' download='../pdf/Quellen.pdf'
+                               class='hover:text-white duration-300 ease-in-out'>Quellen</a>
                         </li>
                     </ul>
 
@@ -87,36 +93,39 @@
                     <h2 class="mb-6 text-sm font-semibold  uppercase  text-white">Resources</h2>
                     <ul class=" text-gray-400 font-medium">
                         <li class="mb-4">
-                            <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind CSS</a>
+                            <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind
+                                CSS</a>
                         </li>
                         <li class="mb-4">
                             <a href="https://stackoverflow.com/" class=" hover:text-white duration-300 ease-in-out">Stackoverflow</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://chatgpt.com/" class=" hover:text-white duration-300 ease-in-out">ChatGPT</a>
+                            <a href="https://chatgpt.com/"
+                               class=" hover:text-white duration-300 ease-in-out">ChatGPT</a>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">The Team</h2>
-                    <ul class="text-gray-400 font-medium">
+                    <a href="team.html" class=" mb-6 md text-sm font-semibold uppercase text-white ">The Team</a>
+                    <ul class="text-gray-400 font-medium mt-4">
                         <li class="mb-4">
-                            <a class='hover:text-white duration-300 ease-in-out'>Michael Stefanoski - Developer</a>
+                            <a class=''>Michael Stefanoski - Developer</a>
                         </li>
 
                         <li class='mb-4'>
-                            <a class='hover:text-white duration-300 ease-in-out'> Victor Pesci - Research</a>
+                            <a class=''> Victor Pesci - Research</a>
                         </li>
                         <li class=''>
-                            <a class='hover:text-white duration-300 ease-in-out'>Kristian Cerni - Documentator &amp; Hoster</a>
+                            <a class=''>Kristian Cerni - Documentator &amp;
+                                Hoster</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </div>
-        <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8" />
+        <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8"/>
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="team.html" class="">Team Four</a>. All Rights Reserved.
           </span>
