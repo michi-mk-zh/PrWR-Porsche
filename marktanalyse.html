@@ -8,43 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="flex flex-col ">
-    <div class="flex justify-between py-4 pr-10 bg-black">
-        <a href="index.html" target="_blank" rel="noopener noreferrer">
-            <img class="responsive-logo" src="Porsche-Logo-3879986402.png" alt="Porsche Logo">
+<header class="flex flex-col bg-black">
+    <div class="flex flex-wrap justify-between items-center p-4">
+        <a href="index.html" class="flex-shrink-0">
+            <img class="responsive-logo w-32 sm:w-48" src="Porsche-Logo-3879986402.png" alt="Porsche Logo">
         </a>
 
-        <div class="mt-4 flex items-center space-x-4">
-
-            <a href="index.html" class="text-white text-sm font-semibold border-b-2  px-3 py-2  ">Home</a>
+        <nav class="mt-4 flex  flex-wrap items-center space-x-4 text-sm">
+            <a href="index.html" class="sm:text-3xl lg:text-xl text-white font-semibold border-b-2 px-3 py-2">Home</a>
 
             <div class="relative inline-block text-left">
-                <div>
-                    <button type="button" class=" inline-flex w-full justify-center gap-x-1.5  bg-black  px-3 py-2 text-sm font-semibold text-white border-b-2" id="menu-button-1" aria-expanded="false" aria-haspopup="true">
-                        Geschichte
-                        <svg class="-mr-1 size-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none hidden" id="menu-1" role="menu" aria-orientation="vertical" tabindex="-1">
-                    <div class="py-1">
-                        <a href="geschichte_porsche.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-1-1">Ferdinand Porsche</a>
-                        <a href="geschichte_porsche_auto.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-1-2">Porsche</a>
-                    </div>
+                <button type="button" class="sm:text-3xl lg:text-xl inline-flex items-center bg-black px-3 py-2 text-sm font-semibold text-white border-b-2" id="menu-button-1">
+                    Geschichte
+                    <svg class="-mr-1 w-5 h-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div class="absolute right-0 mt-2 w-40 origin-top-right bg-white shadow-lg rounded-md hidden" id="menu-1" role="menu">
+                    <a href="geschichte_porsche.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Ferdinand Porsche</a>
+                    <a href="geschichte_porsche_auto.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Porsche</a>
                 </div>
             </div>
 
-            <!-- Marktanalyse Button -->
-            <a href="marktanalyse.html" class="text-white text-sm font-semibold border-b-2 px-3 py-2 ">Marktanalyse</a>
-
-            <!-- Team Button -->
-            <a href="team.html" class="text-white text-sm font-semibold border-b-2 px-3 py-2 ">Team</a>
-        </div>
+            <a href="marktanalyse.html" class="sm:text-3xl lg:text-xl text-white font-semibold border-b-2 px-3 py-2">Marktanalyse</a>
+            <a href="team.html" class="sm:text-3xl lg:text-xl text-white font-semibold border-b-2 px-3 py-2">Team</a>
+        </nav>
     </div>
-
-
 </header>
+
 <main class="bg-cyan-950 min-h-screen pt-16 pb-16 text-white">
 
     <div id="div" class="bg-black p-8 rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row gap-6 ">
